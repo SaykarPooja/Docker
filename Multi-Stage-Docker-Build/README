@@ -1,4 +1,15 @@
-ou can use any name for your Dockerfile, not just the default Dockerfile. 
+Distroless Images:
+
+A distroless image is a type of Docker image that contains only your application and its runtime dependencies, without including a full operating system or shell utilities.
+The idea is to make images smaller, more secure, and easier to manage.
+
+Multistage Build:
+
+A multistage build in Docker is a technique where you use multiple FROM statements in a single Dockerfile to build your application in stages. 
+This helps you create smaller, cleaner, and production-ready images.
+
+
+You can use any name for your Dockerfile, not just the default Dockerfile. 
 But when you do, you must explicitly tell Docker the file name with the -f flag in the docker build command.
 
 Here's how to correct your command and explanation:
