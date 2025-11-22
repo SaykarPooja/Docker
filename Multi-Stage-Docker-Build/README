@@ -1,0 +1,13 @@
+ou can use any name for your Dockerfile, not just the default Dockerfile. 
+But when you do, you must explicitly tell Docker the file name with the -f flag in the docker build command.
+
+Here's how to correct your command and explanation:
+
+
+docker build -t btspooja/docker7:7 -f /home/ubuntu/Docker/Multi-Stage-Docker-Build/dockerfile-for-multistage /home/ubuntu/Docker/Multi-Stage-Docker-Build/
+
+         Part	                                Meaning
+       docker build                           ------>	Build a Docker image
+      -t btspooja/docker7:7	                  ------>Name and tag of the image
+-f /home/.../dockerfile-for-multistage        ------>	Use this Dockerfile instead of default Dockerfile
+/home/.../Multi-Stage-Docker-Build/	          ------>Build context: folder with your project files
